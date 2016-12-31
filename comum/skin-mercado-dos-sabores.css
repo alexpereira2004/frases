@@ -1,0 +1,39 @@
+
+
+
+#pagina {
+  z-index: 20;
+  border-left: 3px #BE8E66 solid;
+  border-right: 3px #BE8E66 solid;
+  border-bottom: 3px #BE8E66 solid;
+  background: #FFF;
+}
+
+#cabecalho #interior{
+  border-left: 3px #BE8E66 solid;
+  border-right: 3px #BE8E66 solid;
+  /*background: #92F48C;*/
+  height: 200px;
+  width: 1020px;
+}
+#cabecalho #logotipo{
+  width: 30%;
+}
+
+
+#rodape{
+  position: absolute;
+  z-index: -1;
+  border-top: 3px #BE8E66 solid;
+  margin-top: -50px;
+  background: #F2CB3E;
+  color: #FFF;
+}
+#rodape #interior{
+  background: #F2CB3E;
+  height: 200px;
+  width: 1000px;
+}
+#rodape a{
+  color: #FFF;
+}

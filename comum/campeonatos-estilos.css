@@ -1,0 +1,40 @@
+#campeonatos-listagem{
+  
+}
+
+#campeonatos-listagem table{
+  width: 90%;
+}
+#campeonatos-listagem .dados{
+  width: 100%;
+  font-size: 0.8em;
+  color: #666666;
+}
+
+#campeonatos-listagem .dados td{
+  border-top: 1px solid #666;
+  margin-top: 10px;
+}
+
+#campeonatos-listagem .resultado{
+  font-size: 1.5em;
+  height: 40px;
+  vertical-align: top;
+}
+
+#campeonatos-listagem .resultado td:nth-child(1){
+  text-align: right;
+  width: 40%;
+}
+#campeonatos-listagem .resultado td:nth-child(2),
+#campeonatos-listagem .resultado td:nth-child(4){
+  text-align: center;
+  
+}
+#campeonatos-listagem .resultado td:nth-child(3){
+  text-align: center;
+}
+#campeonatos-listagem .resultado td:nth-child(5){
+  text-align: left;
+  width: 40%;
+}

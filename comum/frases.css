@@ -1,0 +1,21 @@
+ .tipo1{
+  color: #AA6708;
+}
+
+.frase{
+  font-style: italic;
+  font-size: 40px;
+}
+
+.autor{
+  font-weight: bold;
+  margin: 5px;
+  color: #CCC;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  align-items: center;
+}

@@ -1,0 +1,167 @@
+/* 
+    Document   : skin simpla admin
+    Created on : 27/04/2015, 23:44
+    Author     : Alex Lunardelli
+    Description:
+        Skin Simpla Admin
+
+        #333333 #333 Cinza Escuro
+        #554433 #543 Marrom
+        $557799 #579 Azul dull
+        #DDDDDD #DDD Cinza Fraco
+        #DDDDEE #DDE Cinza Azul
+        #6688CC #68C Azul vibrante
+        #FFFFFF #FFF Branco
+*/
+
+root {
+    display: block;
+}
+body {
+  background: red;
+  background: url("../comum/imagens/css/simpla-admin-bg-sidebar.jpg") repeat ;
+  font-family: sans-serif;
+  font-size: 11px;
+  color: #888;
+}
+html>body #pagina {
+  /* width: auto; height: auto; */
+}
+
+#pagina {
+  height: 100%;
+  font-family: Helvetica, sans-serif;
+  margin: 0px auto;
+  padding: 0px;
+  background: #DDDDDD;
+  width: 80%;
+  min-width: 800px;
+  min-height: 300px;
+  text-align: left;
+}
+#cabecalho{
+  background: #232323;
+  height: 70px;
+}
+#menu{
+ padding: 5px 0 0 10px;
+}
+#corpo{
+  background: #DDDDDD;
+  padding: 20px;
+  min-height: 600px;
+}
+#rodape{
+  background: #68C;
+  height: 40px;
+}
+
+
+
+/******************************************************************************
+
+*******************************************************************************/
+.corNao{
+  font-size: 1.3em;
+  background: #F3F3F3;
+}
+.corSim{
+  font-size: 1.3em;
+  background: #FFF;
+}
+.msg-ok{
+  background: #9ADF8F;
+  border-color: #556652;
+  color: #556652;
+  /*border: 1px solid;*/
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+}
+.msg-erro{
+  background: #DF8F8F;
+  border-color: #ff3333;
+  color: #665252;
+  /*border: 1px solid;*/
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+.msg-atencao{
+  background: #E6DB55;
+  border-color: #E6DB55;
+  color: #666452;
+  /*border: 1px solid;*/
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+.msg-vazio{
+  height: 10px;
+  visibility: hidden;
+}
+
+
+/*******************************************************************************
+  Tabelas de listagem de conteúdo
+*******************************************************************************/
+.dataTable{
+  width: 100%;
+  margin-top: 10px;
+  border-spacing: 0px;
+  border-collapse: separate;
+  line-height: 40px;
+}
+
+.dataTable thead{
+  background: url("../comum/imagens/css/simpla-admin-bg-content-box.gif") repeat-x scroll left top #E5E5E5;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.dataTable tr td{
+  vertical-align: bottom;
+}
+
+.tab_lista_registros .header td{
+  background: #AA7;
+  color: #FFF;
+}
+.tab_lista_registros .headerValue,
+.tab_lista_registros .infoheader,
+.infoheader{
+  text-align: right;
+  font-size: 1.3em;
+  color: #555;
+}
+
+.infovalue textarea, 
+.infovalue select, 
+.infovalue input {
+    padding: 6px;
+    font-size: 13px;
+    background: url("../comum/imagens/css/simpla-admin-bg-form-field.gif") repeat-x scroll left top #FFF;
+    border: 1px solid #D5D5D5;
+    color: #333;
+    border-radius: 8px;
+}
+.bt {
+  font-family: Verdana,Arial,sans-serif;
+  display: inline-block;
+  background: url("../comum/imagens/css/simpla-admin-bg-button-green") repeat-x scroll left top #459300 !important;
+  border: 1px solid #459300 !important;
+  padding: 4px 7px !important;
+  color: #FFF !important;
+  font-size: 11px !important;
+  cursor: pointer;
+}
+
+/*******************************************************************************
+  Plugin jQuery: DataTable
+*******************************************************************************/
+table.dataTable tr.odd { background-color: #F3F3F3; }
+table.dataTable tr.even { background-color: #FFF; }
+
+table.dataTable tr.odd td.sorting_1 { background-color: #F3F3F3; }
+table.dataTable tr.even td.sorting_1 { background-color: #FFF; }

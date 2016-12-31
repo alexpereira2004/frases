@@ -1,0 +1,41 @@
+/*#rede-social 
+    Created on : 28/10/2015, 00:04:07
+    Author     : Alex
+*/
+#rede-social{
+  margin: 0 0 0 25px;
+  padding: 0 0 0;
+}
+#rede-social ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#rede-social ul li{
+  display: inline;
+  padding: 0;
+}
+
+#rede-social ul li a {
+  height: 85px;
+  width: 85px;
+  display: inline-block;
+  background: url(imagens/estrutura/social_layout.png)  no-repeat;
+}
+
+#rede-social ul li.facebook a{
+  width: 85px;
+  background-position: -215px -45px;
+}
+#rede-social ul li.facebook a:hover{
+  background-position: -215px -206px;
+}
+
+
+
+#rede-social ul li.youtube a{
+    background-position: -698px -45px;
+}
+#rede-social ul li.youtube a:hover{
+    background-position: -698px -206px;
+}

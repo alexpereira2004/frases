@@ -1,0 +1,47 @@
+/* 
+    Document   : login
+    Created on : 02/06/2012, 17:05:33
+    Author     : Alex Lunardelli
+    Description:
+        Estilos para formulário de login padrão
+*/
+body.login{
+  background-color: #E5E5E5;
+  color: #000000;
+  padding: 55px 0;
+}
+body.login img{
+  border: none;
+  margin-bottom: 20px;
+  width: 100px;
+  position: relative;
+  left: 120px;
+}
+div.login {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #AAAAAA;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 0 6px #999999;
+  font-family: lucida ,verdana;
+  font-size: 12px;
+  margin: 10px auto;
+  padding: 50px;
+  text-align: left;
+  width: 320px;
+}
+div.login label{
+  font-weight: bold;
+  font-size: 14px;
+}
+div.login input[type=text],
+div.login input[type=password] {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 97%;
+}
+div.login .info-extra{
+  border-top: #AAAAAA dashed 1px;
+  margin-top: 10px;
+  padding: 10px;
+}
+

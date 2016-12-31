@@ -1,0 +1,32 @@
+RewriteEngine on
+Options +FollowSymLinks
+Options +Indexes
+##RewriteEngine on
+
+## Apache configuration file (see httpd.apache.org/docs/2.2/mod/quickreference.html)
+
+## disable directory listing
+Options -Indexes
+
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+AddDefaultCharset ISO-8859-1
+
+##RewriteRule ^/?painel/(.*)$  painel/$1 [L,NC]
+
+
+
+RewriteRule "^([^?]*)$" "index.php" [L,NC]
+
+RewriteRule ^/?geral/(.*)[/]$ "index.php" [L,NC]
+
+
+
+
+
+
+
+

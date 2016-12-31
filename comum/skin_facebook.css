@@ -1,0 +1,85 @@
+/* 
+    Document   : skin_facebook
+    Created on : 27/03/2012, 22:18:32
+    Author     : Alex Lunardelli
+    Description:
+        Skin Facebook
+
+        #333333 #333 Cinza Escuro
+        #554433 #543 Marrom
+        $557799 #579 Azul dull
+        #DDDDDD #DDD Cinza Fraco
+        #DDDDEE #DDE Cinza Azul
+        #6688CC #68C Azul vibrante
+        #FFFFFF #FFF Branco
+*/
+
+root {
+    display: block;
+}
+body {
+  background: #DDE;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+html>body #pagina {
+  /* width: auto; height: auto; */
+}
+
+#pagina {
+  font-family: Helvetica, sans-serif;
+  margin: 0px auto;
+  padding: 10px;
+  background: #FFF;
+  width: 80%;
+  min-width: 800px;
+  min-height: 300px;
+  height: 90%;
+  text-align: left;
+}
+#cabecalho{
+  background: #68C;
+  height: 70px;
+}
+#menu{
+
+}
+#corpo{
+  background: #FFF;
+  padding: 20px;
+  min-height: 600px;
+}
+#rodape{
+  background: #68C;
+  height: 40px;
+}
+
+
+
+/******************************************************************************
+
+*******************************************************************************/
+.corNao{
+  font-size: 0.8em;
+  background: #E2E4FF;
+}
+.corSim{
+  font-size: 0.8em;
+  background: #DDE;
+}
+/*******************************************************************************
+  Tabelas de listagem de conteúdo
+*******************************************************************************/
+.tab_lista_registros .header td{
+  background: #AA7;
+  color: #FFF;
+}
+
+/*******************************************************************************
+  Plugin jQuery: DataTable
+*******************************************************************************/
+table.dataTable tr.odd { background-color: #DDDDDD; }
+table.dataTable tr.even { background-color: #DDDDEE; }
+
+table.dataTable tr.odd td.sorting_1 { background-color: #DDDDDD; }
+table.dataTable tr.even td.sorting_1 { background-color: #DDDDEE; }

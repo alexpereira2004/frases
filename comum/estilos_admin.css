@@ -1,0 +1,251 @@
+/*
+    Document   : estilos_admin
+    Created on : 15/03/2012, 22:40:06
+    Author     : Alex Lunardelli
+    Description:
+        Estilo do painel de administração
+
+
+
+/******************************************************************************
+  Login
+******************************************************************************/
+#conteiner-login {
+  margin-left: 20%;
+  margin-top: 10%;
+  
+}
+#conteiner-login #esquerda{
+  width: 60px;
+  height: 343px;
+  background-image: url('../comum/imagens/estrutura/conteiner_login_esquerda.jpg');
+  float: left;
+}
+#conteiner-login #centro{
+  width: 460px;
+  height: 343px;
+  padding: 0px 0 0 0;
+  background-image: url('../comum/imagens/estrutura/conteiner_login_centro.jpg');
+  float: left;
+}
+#conteiner-login #direita{
+  width: 60px;
+  height: 343px;
+  background-image: url('../comum/imagens/estrutura/conteiner_login_direita.jpg');
+  float: left;
+}
+
+/******************************************************************************
+  Mensagens
+*******************************************************************************/
+.destaque{
+	background:#D3E7D1;
+}
+
+.msg-ok{
+  background: #66CC00;
+  color: #33C;
+  padding: 5px;
+  margin: 5px;
+}
+.msg-erro{
+  background: #ff0000;
+  color: #FFF;
+  padding: 5px;
+  margin: 5px;
+}
+
+.msg-atencao{
+  background: gold;
+  color: #F54F07;
+  padding: 5px;
+  margin: 5px;
+}
+.msg-vazio{
+  height: 40px;
+  visibility: hidden;
+}
+
+/******************************************************************************
+  Genericos
+*******************************************************************************/
+#cabecalho {
+  padding: 15px 0 0 15px;
+}
+.centro{
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+.limpa{
+  clear: both;
+}
+.corNao02{
+  font-size: 0.8em;
+  background: red;
+}
+.corSim02{
+  font-size: 0.8em;
+  background: #E1E4E0;
+}
+
+.visivel{
+  visibility: visible;
+  display: block;
+}
+.invisivel{
+  visibility: hidden;
+  display: none;
+}
+
+.input{
+  border: 1px solid #CCC;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.bt{
+  text-decoration: none;
+  background: #F3D673;
+  padding: 5px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.bt_img{
+  cursor: pointer;
+}
+.bt_link, a{
+  text-decoration: underline;
+  color: #33C;
+  cursor: pointer;
+}
+.bt_link:hover, a:hover{
+  color: red;
+  text-decoration: none;
+}
+.campo-obrigatorio{
+  font-size: .8em;
+  color: #CCC;
+}
+/*
+input[type="submit"],
+.bt_salvar,
+.bt{
+  background: none repeat scroll 0 0 #5B3;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+input[type="submit"]:hover,
+.bt_salvar:hover,
+.bt:hover{
+  background: none repeat scroll 0 0 #9EF;
+}
+*/
+
+
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+.link_01{
+  color: #C8CF03;
+  text-decoration: none;
+}
+.link_01:hover {
+  text-decoration: underline;
+}
+
+.w10{
+  width: 10%;
+}
+.w20{
+  width: 20%;
+}
+.w30{
+  width: 30%;
+}
+.w40{
+  width: 40%;
+}
+.w50{
+  width: 50%;
+}
+.w60{
+  width: 60%;
+}
+.w70{
+  width: 70%;
+}
+.w80{
+  width: 80%;
+}
+.w90{
+  width: 90%;
+}
+
+/*******************************************************************************
+  Tabelas de listagem de conteúdo
+*******************************************************************************/
+.tab_lista_registros a{
+  text-decoration: underline;
+}
+.tab_lista_registros a:hover{
+  text-decoration: none;
+}
+.tab_lista_registros{
+  float: left;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px;
+  margin: 10px 0 10px 0;
+  font-family: Helvetica, sans-serif;
+}
+.tab_lista_registros .header td{
+  border-color: #000;
+  border-top: 2px solid #000;
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+.tab_lista_registros tr{
+  height: 30px;
+  padding: 0px;
+  margin: 0px;
+  border: 1px solid;
+}
+.tab_lista_registros tr td{
+  padding: 5px;
+  margin: 0px;
+  font-size: 1.2em;
+}
+
+.tab_lista_registros .headerValue,
+.tab_lista_registros .infoheader,
+.infoheader{
+  font-size: 12px;
+}
+.tab_lista_registros .infoValue {
+
+}
+/*******************************************************************************
+  Tabelas de edição de conteúdo
+*******************************************************************************/
+
+#toolBar a{
+  margin-left: 7px;
+}
+
+/*******************************************************************************
+  Caixas de dialogo
+*******************************************************************************/
+#dialog-confirm {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+
+}
