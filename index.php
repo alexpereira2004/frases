@@ -28,21 +28,39 @@
 
   </head>
   <body>
-    <header class="navbar navbar-static-top"> 
+<!--    <header class="navbar navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="<?php echo $oUtil->sUrlBase; ?>" class="navbar-brand">Frases para Pensar</a>
+        <nav class="navbar fixed-top navbar-light bg-faded">
+          <a href="<?php echo $oUtil->sUrlBase; ?>" class="navbar-brand">
+            <img src="comum/imagens/estrutura/Brand-horizontal.png" alt="Caixinha de Frases" />
+          </a>
         </div>
         
         
         <nav class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="nova-frase">Adicionar Frases</a></li>
-<!--            <li><a href="#">Consultar todas frases</a></li>
-            <li><a href="#">Autores já mencionados</a></li>-->
+            <li><a href="#">Consultar todas frases</a></li>
+            <li><a href="#">Autores já mencionados</a></li>
           </ul>
         </nav>
       </div>
+    </header>-->
+
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <a href="<?php echo $oUtil->sUrlBase; ?>" class="navbar-brand">
+                  <img src="comum/imagens/estrutura/Brand-horizontal.png" alt="Caixinha de Frases" />
+                </a>
+                <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">Menu</button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav nav">
+                    <li><a href="nova-frase">Adicionar Frases</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <div class="container">
