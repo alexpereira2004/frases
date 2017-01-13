@@ -37,7 +37,7 @@ class dao_Agenda_de_mensagens extends dao_mensagem {
         return false;
       }
 
-
+ 
       for ($i= 0; $i < $this->iLinhas; $i++) {     
         $this->modelo = new model_Mensagem_Agenda();
         $this->modelo->id_agendamento  = $mResultado[$i]['id_agendamento'];

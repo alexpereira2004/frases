@@ -163,8 +163,8 @@ class config {
                                        'sBd' => 'mysqli');
      $aDados['producao'] = array('sServidor' => 'localhost',
                                   'sUsuario' => 'lunac207_frases',
-                                    'sSenha' => '',
-                                    'sBanco' => 'lunac207_bravo',
+                                    'sSenha' => 'D3uBBT6$iZA*',
+                                    'sBanco' => 'lunac207_frases',
                                        'sBd' => 'mysqli');
 
     $oInfoConexao = new database($aDados[$sBanco]);
