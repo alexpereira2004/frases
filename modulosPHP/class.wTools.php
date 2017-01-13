@@ -18,7 +18,7 @@ class wTools {
     include_once 'class.conexao.php';
 //    $this->oBd = new conexao();
     $this->pathImagens = 'imagens/ilustrativas/';
-    $this->sUrlBase = ($_SERVER['SERVER_NAME'] == 'localhost') ? 'http://localhost/Frases/trunk' : 'http://www.deportivobravofc.com.br';
+    $this->sUrlBase = ($_SERVER['SERVER_NAME'] == 'localhost') ? 'http://localhost/Frases/trunk' : 'http://caixinhadefrases.lunacom.com.br';
   }
 
   /* wTools::aspas

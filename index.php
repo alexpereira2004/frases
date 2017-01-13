@@ -22,6 +22,7 @@
     <script src="modulosJS/jquery-2.1.3.min.js"></script>
 
     <link href="modulosJS/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.css" rel="stylesheet" media="screen" />
+    
 
     <link rel="stylesheet" href="modulosJS/bootstrap-chosen-master/bootstrap-chosen.css" />
     <script src="http://harvesthq.github.io/chosen/chosen.jquery.js"></script>
@@ -51,6 +52,7 @@
       ?>
     </div>
 
+    <script type="text/javascript" src="comum/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="modulosJS/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
     <script type="text/javascript" src="modulosJS/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.pt-BR.js"></script>
 

@@ -19,3 +19,53 @@
 
   align-items: center;
 }
+
+/*******************************************************************************
+  Customização Bootstrap
+********************************************************************************/
+
+.nav {
+  padding-top: 15px;
+}
+
+.navbar {
+  min-height: 80px;
+  margin-bottom: 50px;
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 5px 15px 0 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.navbar-inverse {
+  background-color: #F0F0F0;
+  border-color: #F0F0F0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #673500;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #FF8400;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle {
+  margin: 25px 15px 0 15px;
+  border-color: #673500;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #FF8400;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border: none;
+}
