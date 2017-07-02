@@ -1,4 +1,5 @@
 <?php
+  set_time_limit(200);
   session_start();
 
   include_once 'modulosPHP/class.wTools.php';
@@ -37,11 +38,9 @@
                 </a>
                 <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">Menu</button>
             </div>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav nav">
-                    <li><a href="nova-frase">Adicionar Frases</a></li>
-                </ul>
-            </div>
+          <?php
+            $oView->montarMenu();
+          ?>
         </nav>
     </header>
 

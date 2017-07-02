@@ -1,5 +1,5 @@
 <?php
-include 'class.modelo.php';
+
 
 class model_sortear_mensagens extends Modelo{
   public $id;

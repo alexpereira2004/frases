@@ -38,15 +38,12 @@ abstract class view_geral {
   }
   
   public function montarMenu() {?>
-    <div id="menu">
-      <?php
-//        $this->oUtil->montarLink('Principal'  , 'index.php');
-//        $this->oUtil->montarLink('Campeonatos', 'campeonatos.php');
-//        $this->oUtil->montarLink('Sede'       , 'sede.php');
-//        $this->oUtil->montarLink('História'   , 'historia.php');
-//        $this->oUtil->montarLink('Contato'    , 'contato.php');
-      ?>
-    </div> <?php
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav nav">
+            <li><a href="nova-frase">Adicionar Frases</a></li>
+            <li><a href="carregar-frases">Carregar Frases</a></li>
+        </ul>
+    </div><?php
   }
   
   public function montarCorpoConteudo() {

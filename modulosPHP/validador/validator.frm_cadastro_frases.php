@@ -1,19 +1,18 @@
 <?php
 include './modulosPHP/excecao/exception.validador.php';
 class validator_frm_cadastro_frases {
-  
+  private $oUtil;
   public function __construct() {
     $this->oUtil = new wTools();
   }
 
 
-  public function carregarDados(model_nova_frase $oModelo, $aDados) {
-
-    $oModelo->setAutor($aDados['CMPautor']);
-    $oModelo->setFrase($aDados['CMPfrase']);
-    $oModelo->setCodigoTagsSelecionados(isset($aDados['CMPtag']) ? $aDados['CMPtag'] : array());    
-    return $oModelo;
-  }
+//  public function carregarDados(model_nova_frase $oModelo, $aDados) {        
+//    $oModelo->setAutor($this->oUtil->anti_sql_injection($aDados['CMPautor']));
+//    $oModelo->setFrase($this->oUtil->anti_sql_injection($aDados['CMPfrase']));
+//    $oModelo->setCodigoTagsSelecionados(isset($aDados['CMPtag']) ? $aDados['CMPtag'] : array());    
+//    return $oModelo;
+//  }
 
 
   public function validar(model_nova_frase $oModelo) {

@@ -4,7 +4,6 @@
 //  include_once 'modulosPHP/view/view.geral.php';
     include_once 'modulosPHP/controle/ControleFactory.php';
 
-
 $sPgAtual = $oUtil->buscarNomePaginaAtual();
 
   function __autoload($sPgAtual) {
@@ -14,10 +13,12 @@ $sPgAtual = $oUtil->buscarNomePaginaAtual();
     $sPgAtual = str_replace('control_', '', $sPgAtual);
 
     if ((file_exists('modulosPHP/visao/view.'.$sPgAtual.'.php'))) {
+      require_once 'modulosPHP/visao/InterfaceVisao.php';
       require_once 'modulosPHP/visao/view.'.$sPgAtual.'.php';
     }
 
     if ((file_exists('modulosPHP/modelo/model.'.$sPgAtual.'.php'))) {
+      require_once 'modulosPHP/modelo/class.modelo.php';
       require_once 'modulosPHP/modelo/model.'.$sPgAtual.'.php';
     }
 

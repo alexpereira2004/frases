@@ -1,7 +1,7 @@
 <?php
 
 include_once './modulosPHP/validador/validator.frm_cadastro_frases.php';
-include_once './modulosPHP/modelo/class.modelo.php';
+//include_once './modulosPHP/modelo/class.modelo.php';
 
 class control_nova_frase extends Modelo {
   
@@ -27,9 +27,8 @@ class control_nova_frase extends Modelo {
 
           try {
             $this->oValidador = new validator_frm_cadastro_frases();
-            $this->oModelo = $this->oValidador->carregarDados($this->oModelo, $_POST);
+            $this->oModelo->carregarDadosPost($_POST);
             $this->oValidador->validar($this->oModelo);
-
 
             $this->oNegocio->salvar($this->oModelo);
             
