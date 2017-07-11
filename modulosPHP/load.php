@@ -1,5 +1,8 @@
 <?php
-  include_once 'modulosPHP/class.wTools.php';
+  use Biblioteca as Biblioteca;
+  $oUtil = new Biblioteca\wTools;
+    
+//  include_once 'modulosPHP/class.wTools.php';
   include_once 'modulosPHP/class.config.php';
 //  include_once 'modulosPHP/view/view.geral.php';
     include_once 'modulosPHP/controle/ControleFactory.php';

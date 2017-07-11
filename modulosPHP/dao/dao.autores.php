@@ -1,5 +1,6 @@
 <?php
   include_once './modulosPHP/modelo/model.autores.php';
+  use Biblioteca as Biblioteca;
   /**
    * Descricao
    *
@@ -28,7 +29,7 @@
     public function __construct() {
       include_once 'modulosPHP/class.conexao.php';
       $this->oBd   = new conexao();
-      $this->oUtil = new wTools();
+      $this->oUtil = new Biblioteca\wTools();
     }
 
     public function salvar() {

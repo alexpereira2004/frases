@@ -5,11 +5,12 @@
  * @date 24-12-2016
  */
 include_once './modulosPHP/dao/dao.Agenda_de_mensagens.php';
+use Biblioteca as Biblioteca;
 class business_apresentacao {
   public $aMsg;
 
   public function __construct() {
-    $this->oUtil = new wTools();
+    $this->oUtil = new Biblioteca\wTools();
   }
   
   public function mostrarMensagemDoDia($sData = '') {

@@ -1,4 +1,6 @@
 <?php
+namespace Biblioteca;
+use Exception;
 
 class wTools {
 
@@ -18,7 +20,8 @@ class wTools {
     include_once 'class.conexao.php';
 //    $this->oBd = new conexao();
     $this->pathImagens = 'imagens/ilustrativas/';
-    $this->sUrlBase = ($_SERVER['SERVER_NAME'] == 'localhost') ? 'http://localhost/Frases/branches/1.1' : 'http://www.caixinhademensagens.com.br';
+
+    $this->sUrlBase = $this->retornarTrueSeEhDesenv() ? 'http://localhost/Frases/branches/1_1_4' : 'http://www.caixinhademensagens.com.br';
   }
 
   /* wTools::aspas
@@ -2455,6 +2458,12 @@ class wTools {
     return $sConteudo;
       
     
+  }
+  
+    
+  public function retornarTrueSeEhDesenv () {
+    $aHostLocais = array ('localhost', '192.168.0.4');
+    return in_array($_SERVER['SERVER_NAME'], $aHostLocais);
   }
   
 }

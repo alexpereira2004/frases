@@ -1,10 +1,10 @@
 <?php
-	// 1.1.4
   set_time_limit(200);
   session_start();
-
   include_once 'modulosPHP/class.wTools.php';
-  $oUtil   = new wTools();
+  
+  use Biblioteca as Biblioteca;
+  $oUtil = new Biblioteca\wTools;
 
   include_once 'modulosPHP/load.php';
 

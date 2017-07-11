@@ -1,5 +1,7 @@
 <?php
 
+use Biblioteca as Biblioteca;
+  
 class model_nova_frase extends Modelo{
   public $sAutor;
   public $sFrase;
@@ -9,7 +11,7 @@ class model_nova_frase extends Modelo{
   private $oUtil;
 
   public function __construct() {
-    $this->oUtil = new wTools();
+    $this->oUtil = new Biblioteca\wTools;
   }
 
   public function setAutor($sAutor) {

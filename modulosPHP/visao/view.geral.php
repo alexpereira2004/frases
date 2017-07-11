@@ -1,5 +1,5 @@
 <?php
-
+use Biblioteca as Biblioteca;
 include_once 'modulosPHP/class.wTools.php';
 
 abstract class view_geral {
@@ -9,7 +9,7 @@ abstract class view_geral {
   protected $oConfig;
 
   public function __construct() {
-    $this->oUtil = new wTools();
+    $this->oUtil = new Biblioteca\wTools();
     $this->sPgAtual = $this->oUtil->buscarNomePaginaAtual();
     $this->oConfig = new config($this->oUtil->buscarNomePaginaAtual());
   }

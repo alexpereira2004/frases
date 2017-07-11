@@ -11,6 +11,8 @@
 include 'adodb5/adodb.inc.php';
 include_once 'class.config.php';
 include_once 'class.database.php';
+use Biblioteca as Biblioteca;
+
 class conexao {
   private static $sBanco = null;
   private $oBanco;
@@ -19,12 +21,14 @@ class conexao {
   private $iLinhas = 0;
   public  $iUltimoId;
   public function __construct() {
-    
-    $this->definirBanco();
+
+    $this->oUtil = new Biblioteca\wTools();
     
     $this->oConfig = new config();
     
-    self::definirBanco();
+    $this->definirBanco();
+    
+//    self::definirBanco();
     
     $oInfoConexao = $this->oConfig->getInfoBd(self::$sBanco);
     
@@ -70,11 +74,11 @@ class conexao {
    * 
    * @author Alex Lunardelli
    */
-  public static function definirBanco() {
+  public function definirBanco() {
     if (is_null(self::$sBanco)) {
       $aRet = explode('/', $_SERVER['PHP_SELF']);
 
-      $aRet[1] = ($_SERVER['SERVER_NAME'] == 'localhost') ? $aRet[1] : 'producao';
+      $aRet[1] = $this->oUtil->retornarTrueSeEhDesenv() ? $aRet[1] : 'producao';
 
       switch ($aRet[1]) {
 	case 'Frases':

@@ -1,9 +1,10 @@
 <?php
 include './modulosPHP/excecao/exception.validador.php';
+use Biblioteca as Biblioteca;
 class validator_frm_cadastro_frases {
   private $oUtil;
   public function __construct() {
-    $this->oUtil = new wTools();
+    $this->oUtil = new Biblioteca\wTools();
   }
 
 

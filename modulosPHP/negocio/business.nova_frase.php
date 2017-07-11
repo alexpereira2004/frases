@@ -1,4 +1,5 @@
 <?php
+use Biblioteca as Biblioteca;
 include_once 'modulosPHP/dao/dao.autores.php';
 include_once 'modulosPHP/dao/dao.mensagem.php';
 include_once 'modulosPHP/dao/dao.tags.php';
@@ -11,7 +12,7 @@ include_once 'modulosPHP/modelo/model.mensagem.php';
 class business_nova_frase {
   
   public function __construct() {
-    $this->oUtil = new wTools();
+    $this->oUtil = new Biblioteca\wTools;
     $this->daoTag = new tags();
     $this->buscarTags();
   }
